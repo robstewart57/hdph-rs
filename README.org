@@ -1,6 +1,4 @@
-#+TITLE: The HdpH-RS Implementation
-
-** Haskell Distributed Parallel Haskell with Reliable Scheduling
+*** Haskell Distributed Parallel Haskell with Reliable Scheduling
 
 Haskell distributed parallel Haskell Reliable Scheduling (HdpH-RS) is
 a Haskell DSL for fault tolerant parallel computation on
@@ -10,15 +8,15 @@ platforms. HdpH-RS is implemented entirely in Haskell but does make
 use of a few GHC extensions, most notably TemplateHaskell.
 
 The design, validation and implementation of HdpH-RS is described in
-my PhD thesis "Reliable Massively Parallel Symbolic Computing Fault
-Tolerance for a Distributed Haskell" [[http://www.macs.hw.ac.uk/~rs46/phd-thesis.html][detailed here]]. The contributions
+my PhD thesis *Reliable Massively Parallel Symbolic Computing Fault
+Tolerance for a Distributed Haskell* [[http://www.macs.hw.ac.uk/~rs46/phd-thesis.html][detailed here]]. The contributions
 of HdpH-RS include:
 
 - An extension to the HdpH language operational semantics for fault
   tolerance in HdpH-RS has been formulated (Chapter 3).
 
 - The design of a fault tolerant work stealing scheduling protocol has
-  been abstracted in Promela and verified with the SPIN model checker
+  been abstracted in Promela ([[https://github.com/robstewart57/phd-thesis/blob/master/spin_model/hdph_scheduler.pml][here]]) and verified with the SPIN model checker
   (Chapter 4), and implemented in Haskell (Chapter 5).
 
 - The scalability of HdpH-RS has been measured up to 1400 cores on
@@ -28,11 +26,6 @@ of HdpH-RS include:
 
 This release is considered alpha stage. Moreover, this repository is
 unlikely to receive further commits. Go to
-<https://github.com/PatrickMaier/HdpH> to download the upstream
+[[https://github.com/PatrickMaier/HdpH][the HdpH GitHub page]] to download the upstream
 version of HdpH. For details on how to execute HdpH-RS programs on
 distributed-memory architectures, see Section 6.2 of my thesis.
-
-** Related Projects
-
-- [[http://haskell-distributed.github.com][Cloud Haskell]]
-- [[https://github.com/simonmar/monad-par][Par Monad and Friends]]
